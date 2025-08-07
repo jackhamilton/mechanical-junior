@@ -1,0 +1,13 @@
+[package]
+name = "mechanical-junior"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+convert_case = "0.8.0"
+regex = "1.11.1"
+serde = { version = "1.0.219", features = ["derive"] }
+shell-words = "1.1.0"
+shellexpand = "3.1.1"
+toml-configurator = "0.1.0"
+walkdir = "2.5.0"

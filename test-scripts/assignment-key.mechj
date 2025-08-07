@@ -1,0 +1,3 @@
+lang swift
+def key "StatSig key"
+AssignmentKeys.swift;LineRegex("public enum AssignmentKeys", 0);lastInSectionOrFallback(LineRegex("discover", 0), LineRegex("case unused", -3), ifFallbackNewlineBefore);enumCaseWithRaw(camelCase($key), $key)
