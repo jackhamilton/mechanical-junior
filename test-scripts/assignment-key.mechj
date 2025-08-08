@@ -1,3 +1,5 @@
 lang swift
 def key "StatSig key"
-AssignmentKeys.swift;LineRegex("public enum AssignmentKeys", 0);lastInSectionOrFallback(LineRegex("discover", 0), LineRegex("case unused", -3), ifFallbackNewlineBefore);enumCaseWithRaw(camelCase($key), $key)
+AssignmentKeys.swift;LineRegex("public enum AssignmentKeys", 0);lastInSectionOrFallback(LineRegex("MARK: - dating", 0), LineRegex("MARK: - Misc", -1));enumCaseWithRaw(camelCase($key), $key)
+AssignmentKeys.swift;LineRegex("case .enableSpankBankBlurPilter", 0);LineRegex("discoverOptOut", 0);enumCaseWithRaw(camelCase($key), $key)
+

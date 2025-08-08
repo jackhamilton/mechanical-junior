@@ -91,7 +91,7 @@ fn parse_finder(finder: &str, idx: &usize) -> Finder {
 
 fn parse_finder_option(option: &str, idx: &usize) -> FinderOption {
     match option.to_lowercase().as_str() {
-        "iffallbacknewlinebefore" => FinderOption::IfFallbackNewlineBefore,
+        "iffallbacknewlinebefore" => FinderOption::IfFallbackExtraNewline,
         _ => panic!("Invalid finder option {option} on line {idx}")
     }
 }

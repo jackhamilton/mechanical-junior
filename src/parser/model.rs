@@ -56,15 +56,23 @@ impl Display for Finder {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Copy, PartialEq)]
 pub enum FinderOption {
-    IfFallbackNewlineBefore
+    IfFallbackExtraNewline
+}
+
+impl Clone for FinderOption {
+    fn clone(&self) -> Self {
+        match self {
+            FinderOption::IfFallbackExtraNewline => return FinderOption::IfFallbackExtraNewline,
+        }
+    }
 }
 
 impl Display for FinderOption {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match self {
-            FinderOption::IfFallbackNewlineBefore => write!(f, "FinderOption.IfFallbackNewlineBefore"),
+            FinderOption::IfFallbackExtraNewline => write!(f, "FinderOption.IfFallbackNewlineBefore"),
         }
     }
 }
